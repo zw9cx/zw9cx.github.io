@@ -37,6 +37,13 @@
     GTゼミで6-2と，6-3の最初の方を扱った．6-2は計算すべきことはほぼ6-1に詰まっていたので省略し，なぜ境界に $C^{2,\alpha}$ を課すのかについては計算して，理由を述べた（理由は，ある座標変換 $\psi$ で領域を曲げて境界が局所的に flat な場合に帰着させるのだが，作用素の係数を変換したときに $\psi$ に2階微分が現れるからである．一般の楕円型作用素の Schauder 評価は，係数 $\in C^{0,\alpha}$ を要求する）．これと Continuity method について話し，任意の $f\in C^{0,\alpha}(\bar{\Omega}), \ \varphi\in C^{2,\alpha}(\bar{\Omega})$ に対して，方程式 $Lu=f\quad \text{in}\ \Omega,\ u=\varphi\quad\text{on}\ \partial\Omega$ の解が存在することは $L=\Delta$ の場合と同値であるという命題を証明した．
   </p>
 
+  <p>
+    ところで，Schauder評価とは典型的には $\|u\|_{C^{2,\alpha}}\leq C(\|u\|_{C^0}+\|Lu\|_{C^{0,\alpha}})$ を主張するが，GTゼミの聴講者の一人である複素幾何をやっている友人が読んでいる幾何の本では，$\|u\|_{C^0}$ の項が $ \|u\|_{L^1}$ になっているらしい．これは interpolation $\|u\|_{C^0}\leq \varepsilon\|u\|_{C^{2,\alpha}}+C(\varepsilon)\|u\|_{L^1}$ により，$C^0$ ノルムによる評価から $L^1$ ノルムによる評価は直ちに従う．この interpolation の証明を友人に話したときに，最初に思いついた背理法からのコンパクト埋め込みを用いる議論（成り立たないとして，任意の $n$ に対して，$u_n$ を $\|u_n\|_{C^{2,\alpha}}=1,\ \|u_n\|_{C^0}>\varepsilon_0+n\|u_n\|_{L^1}$ となるように取り，コンパクト埋め込み $C^{2,\alpha}\hookrightarrow C^0$ により ある $u$ に一様収束する部分列を抜けば $\|u\|_{L^1}=0$ でなければならないので矛盾する）を話した．この論法は色々な interpolation に適用できる一方，関数の気持ちに寄り添えていないような気もしている．なので埋め込みを使わない証明を書いておく； $C^{2,\alpha}$ の部分を $C^1$ に置き換えたものを示せばよく，さらにその項を $Du$ の $C^0$ ノルムに置き換えたものを示せば十分であるが，任意の $x\in \Omega$ と $\varepsilon>0$ に対して
+    \begin{equation}
+    |u(x)|\leq \frac{1}{\omega_n\varepsilon^n}\int_{B_\varepsilon(x)}|u(x)-u(y)|dy+\frac{1}{\omega_n\varepsilon^n}\int_{B_\varepsilon(x)}|u(y)|dy\leq \varepsilon\sup_\Omega|Du|+\frac{1}{\omega_n\varepsilon^n}\|u\|_{L^1}.
+    \end{equation}
+  </p>
+
   <h3>
     2026年10月26日（月）
   </h3>
